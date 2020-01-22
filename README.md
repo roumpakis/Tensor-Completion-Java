@@ -23,39 +23,23 @@ The Project consists of the following classes.
 *  **Main**
 
 ## Modules Description <a name="modules"></a>
-* **Tensor:** Collect data from wearable sensors and convert them into the appropriate data structures. This module supports multiple types of HAR datasets.
-* **Segmentation:** Split data into sliding windows of observations. The key parameters of the Segmentation component is the size _w_ pf the sliding windows, as well as the overlapping factor _a_.
-* **Feature Extraction:** Extract _M_ features for each data segment of each sensor modality. Currently, we support 11 types of statistical features and the Pairwise Correlation among sensor channels, listed below. 
-    *  Mean
-    *  Median
-    *  Standard Deviation
-    *  Variance
-    *  Root Mean Square
-    *  Skewness
-    *  Kurtosis
-    *  Interquartile Range
-    *  Mean Crossing Rate
-    *  Zero Crossing Rate
-    *  Spectral Entropy
-    *  Pairwise Correlation
-    
-* **Feature Selection:** Contains a pool of available Feature Selection Algorithms (FSA) in order to calculate the 
-_R (R <<M)_ representative features for each segment. Currently 4 types of FSA are implemented. 
-    * Supervised (Sequential Floating Forward Selection, SFFS)
-    * Unsupervised (Feature Selection based on Feature Similarity, FSSA)
-    * Ranking-based (Relief-F) 
-    * Unsupervised graph-based (Graph Clustering with Node Centrality, GCNC)
+* **Tensor:** Class for the construction and  management of 3D data structures (Tensors)
+* **TMacPar:** 
+* **Matlab:** 
+* **IO:** 
+* **Main: **
+
 
 ## Datasets <a name="datasets"></a>
 The data streams are real measurements of pressure sensors located in the greater Malevizi Municipality area. 
 Specifically in the folder \data there are measurements from 10 regions stored in .csv files.
 
-* DiIn.csv 	: Input water stream pressure measurement from i-th area
-* DiOut.csv : Output water stream pressure measurement from i-th area
-* DiInMiss.csv : Input water stream pressure measurement from i-th area with missing entries
-* rdnxj.csv : I
-* X_j.csv : I
-* Y_j.csv : I
+* **DiIn.csv **	: Input water stream pressure measurement from i-th area
+* **DiOut.csv** : Output water stream pressure measurement from i-th area
+* **DiInMiss.csv **: Input water stream pressure measurement from i-th area with missing entries
+* **rdnxj.csv **: I
+* **X_j.csv **: I
+* **Y_j.csv **: I
 ## Useful Methods <a name="useful"></a>
 
 Besides the methods used that implement the Tensor Completion pipeline, this project contains methods to write the feature matrixes and the experiment statistics into .csv for post-processing evaluation purposes.
