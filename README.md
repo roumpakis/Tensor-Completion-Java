@@ -1,5 +1,5 @@
 # Tensor Completion Java Implementation
-TMac: Tensor completion by parallel Matrix factorization (https://xu-yangyang.github.io/TMac/)  implemented in Java.
+TMac: Tensor Completion by parallel Matrix factorization (https://xu-yangyang.github.io/TMac/)  implemented in Java.
 This project provides a mathematical tool for missing data reconstruction and managing three-dimensional structures.
 
 # Table of contents
@@ -11,18 +11,19 @@ This project provides a mathematical tool for missing data reconstruction and ma
 6. [Licence](#licence)
 
 ## Introduction <a name="introduction"></a>
-FORTH-TRACE library, as part of the FORTH-TRACE benchmark framework, is a Java implemented software tool that covers the entire feature-level fusion chain applied in Human Activity Recognition (HAR) applications.
-Feature selection is considered an important step of filtering redundant information, prior to applying any classification technique, especially for data streams characterized by high correlation.  
+One problem we often encounter in wireless sensor networks is that of non-recorded measurements.
+Tensor Completion provides a way of completing these measurements,especially for data streams characterized by high correlation.  
 
-The FORTH-TRACE library consists of the following modules.
+The Project consists of the following classes.
 
-*  **Acquisition**
-*  **Segmentation**
-*  **Feature Extraction**
-*  **Feature Selection**
+*  **Tensor**
+*  **TMacPar**
+*  **Matlab**
+*  **IO**
+*  **Main**
 
 ## Modules Description <a name="modules"></a>
-* **Acquisition:** Collect data from wearable sensors and convert them into the appropriate data structures. This module supports multiple types of HAR datasets.
+* **Tensor:** Collect data from wearable sensors and convert them into the appropriate data structures. This module supports multiple types of HAR datasets.
 * **Segmentation:** Split data into sliding windows of observations. The key parameters of the Segmentation component is the size _w_ pf the sliding windows, as well as the overlapping factor _a_.
 * **Feature Extraction:** Extract _M_ features for each data segment of each sensor modality. Currently, we support 11 types of statistical features and the Pairwise Correlation among sensor channels, listed below. 
     *  Mean
@@ -48,9 +49,13 @@ _R (R <<M)_ representative features for each segment. Currently 4 types of FSA a
 ## Datasets <a name="datasets"></a>
 The data streams are real measurements of pressure sensors located in the greater Malevizi Municipality area. 
 Specifically in the folder \data there are measurements from 10 regions stored in .csv files.
+
 * DiIn.csv 	: Input water stream pressure measurement from i-th area
 * DiOut.csv : Output water stream pressure measurement from i-th area
-
+* DiInMiss.csv : Input water stream pressure measurement from i-th area with missing entries
+* rdnxj.csv : I
+* X_j.csv : I
+* Y_j.csv : I
 ## Useful Methods <a name="useful"></a>
 
 Besides the methods used that implement the Tensor Completion pipeline, this project contains methods to write the feature matrixes and the experiment statistics into .csv for post-processing evaluation purposes.
