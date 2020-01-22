@@ -2,6 +2,8 @@
 TMac: Tensor Completion by parallel Matrix factorization (https://xu-yangyang.github.io/TMac/)  implemented in Java.
 This project provides a mathematical tool for missing data reconstruction and managing three-dimensional structures.
 
+
+
 # Table of contents
 1. [Introduction](#introduction)
 2. [Modules Description](#modules)
@@ -14,6 +16,12 @@ This project provides a mathematical tool for missing data reconstruction and ma
 One problem we often encounter in wireless sensor networks is that of non-recorded measurements.
 Tensor Completion provides a way of completing these measurements,especially for data streams characterized by high correlation.  
 
+**Tensor**
+
+**Tensor Fold/Unfolding**
+
+**Tensor Completion (TC)**
+
 
 
 ## Modules Description <a name="modules"></a>
@@ -23,7 +31,7 @@ The Project consists of the following classes.
 * **TMacPar:** Class for reconstructing low-rank tensor measurements using the TMac algorithm.
 * **Matlab:** Class that provides useful mathematical functions, operations in three-dimensional structures as well as type conversion between its various mathematical libraries
 * **IO:**  Class for reading and writing .csv files. Methods of this class are used to record the reconstruction results in the res\ folder, for post-processing evaluation purposes.
-* **Main: ** Class that includes the functions for executing TC in predefined data as well as a function for  user-defined data reconstruction
+* **Main:** Class that includes the functions for executing TC in predefined data as well as a function for  user-defined data reconstruction
 
 
 ## Datasets <a name="datasets"></a>
