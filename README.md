@@ -46,13 +46,15 @@ _R (R <<M)_ representative features for each segment. Currently 4 types of FSA a
     * Unsupervised graph-based (Graph Clustering with Node Centrality, GCNC)
 
 ## Datasets <a name="datasets"></a>
-The data streams are real measurements of pressure sensors located in the greater Malevizi Municipality area.
-* DiIn.csv 	: 
-* DiOut.csv :
+The data streams are real measurements of pressure sensors located in the greater Malevizi Municipality area. 
+Specifically in the folder \data there are measurements from 10 regions stored in .csv files.
+* DiIn.csv 	: Input water stream pressure measurement from i-th area
+* DiOut.csv : Output water stream pressure measurement from i-th area
 
 ## Useful Methods <a name="useful"></a>
-Besides the methods used that implement the Machine Learning pipeline, this project contains methods to write the feature matrixes and the experiment statistics into .csv for post-processing evaluation purposes.
-These methods are located in the IO package of the project. It is recommended to save the .csv files in the files/ directory of the project.
+
+Besides the methods used that implement the Tensor Completion pipeline, this project contains methods to write the feature matrixes and the experiment statistics into .csv for post-processing evaluation purposes.
+These methods are located in the IO method of the project. It is recommended to save the .csv files in the res/ directory of the project.
 
 Furthermore, the Main.java file contains full experiment implementation for the following scenarios.
 
