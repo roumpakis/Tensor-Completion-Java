@@ -14,18 +14,14 @@ This project provides a mathematical tool for missing data reconstruction and ma
 One problem we often encounter in wireless sensor networks is that of non-recorded measurements.
 Tensor Completion provides a way of completing these measurements,especially for data streams characterized by high correlation.  
 
-The Project consists of the following classes.
 
-*  **Tensor**
-*  **TMacPar**
-*  **Matlab**
-*  **IO**
-*  **Main**
 
 ## Modules Description <a name="modules"></a>
-* **Tensor:** Class for the construction and  management of 3D data structures (Tensors)
-* **TMacPar:** 
-* **Matlab:** 
+The Project consists of the following classes.
+
+* **Tensor:** Class for the construction and  management of 3D data structures, the Tensors
+* **TMacPar:** Class for reconstructing low-rank tensor measurements using the TMac algorithm.
+* **Matlab:** Class that provides useful mathematical functions, operations in three-dimensional structures as well as formulas between its various mathematical libraries
 * **IO:** 
 * **Main: **
 
@@ -34,12 +30,12 @@ The Project consists of the following classes.
 The data streams are real measurements of pressure sensors located in the greater Malevizi Municipality area. 
 Specifically in the folder \data there are measurements from 10 regions stored in .csv files.
 
-* **DiIn.csv **	: Input water stream pressure measurement from i-th area
+* **DiIn.csv**	: Input water stream pressure measurement from i-th area
 * **DiOut.csv** : Output water stream pressure measurement from i-th area
-* **DiInMiss.csv **: Input water stream pressure measurement from i-th area with missing entries
-* **rdnxj.csv **: I
-* **X_j.csv **: I
-* **Y_j.csv **: I
+* **DiInMiss.csv**: Input water stream pressure measurement from i-th area with missing entries
+* **rdnxj.csv**: I
+* **X_j.csv**: I
+* **Y_j.csv**: I
 ## Useful Methods <a name="useful"></a>
 
 Besides the methods used that implement the Tensor Completion pipeline, this project contains methods to write the feature matrixes and the experiment statistics into .csv for post-processing evaluation purposes.
