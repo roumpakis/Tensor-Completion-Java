@@ -21,14 +21,14 @@ The Project consists of the following classes.
 
 * **Tensor:** Class for the construction and  management of 3D data structures, the Tensors
 * **TMacPar:** Class for reconstructing low-rank tensor measurements using the TMac algorithm.
-* **Matlab:** Class that provides useful mathematical functions, operations in three-dimensional structures as well as formulas between its various mathematical libraries
-* **IO:** 
+* **Matlab:** Class that provides useful mathematical functions, operations in three-dimensional structures as well as type conversion between its various mathematical libraries
+* **IO:**  Class for reading and writing .csv files. Methods of this class are used to record the reconstruction results in the res\ folder, for post-processing evaluation purposes.
 * **Main: **
 
 
 ## Datasets <a name="datasets"></a>
 The data streams are real measurements of pressure sensors located in the greater Malevizi Municipality area. 
-Specifically in the folder \data there are measurements from 10 regions stored in .csv files.
+Specifically in the folder data\ there are measurements from 10 regions stored in .csv files.
 
 * **DiIn.csv**	: Input water stream pressure measurement from i-th area
 * **DiOut.csv** : Output water stream pressure measurement from i-th area
