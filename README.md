@@ -23,12 +23,12 @@ The Project consists of the following classes.
 * **TMacPar:** Class for reconstructing low-rank tensor measurements using the TMac algorithm.
 * **Matlab:** Class that provides useful mathematical functions, operations in three-dimensional structures as well as type conversion between its various mathematical libraries
 * **IO:**  Class for reading and writing .csv files. Methods of this class are used to record the reconstruction results in the res\ folder, for post-processing evaluation purposes.
-* **Main: **
+* **Main: ** Class that includes the functions for executing TC in predefined data as well as a function for  user-defined data reconstruction
 
 
 ## Datasets <a name="datasets"></a>
 The data streams are real measurements of pressure sensors located in the greater Malevizi Municipality area. 
-Specifically in the folder data\ there are measurements from 10 regions stored in .csv files.
+Specifically in the folder data\ there are measurements from 10 regions stored in .csv files. The same folder contains the files needed to run a test.
 
 * **DiIn.csv**	: Input water stream pressure measurement from i-th area
 * **DiOut.csv** : Output water stream pressure measurement from i-th area
@@ -37,11 +37,6 @@ Specifically in the folder data\ there are measurements from 10 regions stored i
 * **X_j.csv**: I
 * **Y_j.csv**: I
 ## Useful Methods <a name="useful"></a>
-
-Besides the methods used that implement the Tensor Completion pipeline, this project contains methods to write the feature matrixes and the experiment statistics into .csv for post-processing evaluation purposes.
-These methods are located in the IO method of the project. It is recommended to save the .csv files in the res/ directory of the project.
-
-Furthermore, the Main.java file contains full experiment implementation for the following scenarios.
 
 * HAPT dataset
 * FORTH-TRACE dataset (collective scenario -- all devices of 10 random participants)
