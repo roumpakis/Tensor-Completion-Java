@@ -46,10 +46,9 @@ _R (R <<M)_ representative features for each segment. Currently 4 types of FSA a
     * Unsupervised graph-based (Graph Clustering with Node Centrality, GCNC)
 
 ## Datasets <a name="datasets"></a>
-The FORTH-TRACE library is designed to support any given HAR dataset.
-Our implementation is tested using two HAR datasets.
-* HAPT dataset -- single location - multiple modalities (Available in http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions)
-* FORTH-TRACE dataset -- multiple locations - multiple modalities (Available at https://github.com/spl-icsforth/FORTH_TRACE_DATASET)
+The data streams are real measurements of pressure sensors located in the greater Malevizi Municipality area.
+* DiIn.csv 	: 
+* DiOut.csv :
 
 ## Useful Methods <a name="useful"></a>
 Besides the methods used that implement the Machine Learning pipeline, this project contains methods to write the feature matrixes and the experiment statistics into .csv for post-processing evaluation purposes.
@@ -63,11 +62,8 @@ Furthermore, the Main.java file contains full experiment implementation for the 
 
 ## Installation Instructions <a name="execution"></a>
 1. Download the project source files.
-2. Import the project to Eclipse or other IDE.
+2. Import the project to Netbeans or other IDE.
 3. Add the following libraries into the build path (located in the libs/ directory of the project):
-    * commons-math3-3.5.jar
-    * javaml-0.1.7.jar
-    * weka.jar
 4. Specify the path of your dataset files in the Main.java file of the project.
 
 
