@@ -30,8 +30,7 @@ to low-rank matrices via appropriate unfolding and then apply matrix completion 
 Unfolding is a transformation that reorders the elements of a tensor into a matrix and simplifies subsequent matrix-based processing . Such transformation is not unique, since different ways exist for stacking the horizontal, lateral and frontal slices of a tensor in either column-wise or row-wise arrays.
 The reverse process, where a 3D Tensor transform into a matrix is called folding.
 
-![Tensor Unfolding](https://www.google.com/search?q=tensor+unfolding+image&sxsrf=ACYBGNRf_OEWUieHj0sWdD4-yXKozvlXDg:1579771794604&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjz0JLFtJnnAhUByqQKHZFdAfwQ_AUoAXoECAsQAw#imgrc=tfxN9a0W79W7yM:)
-
+![Tensor Unfolding](/images/Capture.png)
 **Tensor Completion (TC)**
 
 
