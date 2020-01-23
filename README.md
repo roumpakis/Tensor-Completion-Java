@@ -18,6 +18,10 @@ Tensor Completion provides a way of completing these measurements,especially for
 
 **Tensor**
 
+
+In real-world applications, it is often necessary to store the measurements in higher-order structures,
+apart from 2D matrices.Tensors are third-dimensional data structure which can be consindered as as a generalization of scalars (zero-order
+tensors), vectors (first-order tensors) and matrices (second-order tensors)
 **Tensor Fold/Unfolding**
 
 **Tensor Completion (TC)**
