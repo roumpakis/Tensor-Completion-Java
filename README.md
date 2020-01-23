@@ -78,7 +78,8 @@ Specifically in the folder data\ there are measurements from 10 regions stored i
 * **Matlab.Unfold:** Method that provides folding functionality, where a 3D Tensor  transform into a 2D matrix.
 * **TCJTest.Test:** Method that runs a TC test, with predefined data 
 * **Main.TMaacParTest:** Method that runs TC with user defined  data and random matrices
-
+* **Tensor.TensorObservedElements:** The measurements set that we have observed, a useful function for data reconstruction purpose
+* **Tensor.TensorObservedIndecies:** The indices where observed measurements are stored, a useful function for data reconstruction purpose
 
 ## Installation Instructions <a name="execution"></a>
 1. Download the project source files.
