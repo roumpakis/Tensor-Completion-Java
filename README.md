@@ -16,6 +16,7 @@ This project provides a mathematical tool for missing data reconstruction and ma
 One problem we often encounter in wireless sensor networks is that of non-recorded measurements.
 Tensor Completion provides a way of completing these measurements,especially for data streams characterized by high correlation.  
 
+
 **Tensor**
 
 
@@ -26,7 +27,8 @@ tensors), vectors (first-order tensors) and matrices (second-order tensors).
 **Tensor Fold/Unfolding**
 A commonly used way for recovering missing entries in high-order tensors is first to reduce them
 to low-rank matrices via appropriate unfolding and then apply matrix completion techniques.
-
+Unfolding is a transformation that reorders the elements of a tensor into a matrix and simplifies subsequent matrix-based processing . Such transformation is not unique, since different ways exist for stacking the horizontal, lateral and frontal slices of a tensor in either column-wise or row-wise arrays.
+The reverse process, where a 3D Tensor transform into a matrix is called folding.
 **Tensor Completion (TC)**
 
 
