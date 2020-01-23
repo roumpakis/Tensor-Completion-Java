@@ -38,7 +38,7 @@ The reverse process, where a 3D Tensor transform into a matrix is called folding
 **Tensor Completion (TC)**
 
 Parallel matrix factorization (PMF)  has been introduced as an efficient alternative for solving the TC problem.
-Focusing on the 3D case, we are interested in fully recovering a tensor T R^{N X S X P}
+Focusing on the 3D case, we are interested in fully recovering a tensor $$ T R^{N X S X P} $$
 from M ≪ N  S  T measurements.
 ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/formula.PNG)
 
