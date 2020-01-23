@@ -601,10 +601,7 @@ public class Matlab {
     }
 
     public Tensor Fold(DenseMatrix arg, DenseVector Nway, int mode){
-        //System.out.println("FOLD");
-       // System.out.println("mode = "+mode+" x = ");
         DenseVector circshiftNway = circshift(Nway, mode);
-      //  System.out.println("x = "+circshiftNway.get(0)+"y = "+circshiftNway.get(1)+" z = "+circshiftNway.get(2));
         Tensor reshape = reshape(arg, circshiftNway, mode);
         Tensor res = shiftdim(reshape,Nway,mode);
         return  res;
@@ -681,15 +678,12 @@ System.out.println();
     }
 
     public DenseMatrix Unfold(Tensor arg, DenseVector Nway, int mode) {
-     //   System.out.println(">>>>>>>>>> TENSOR UNFOLDING\nmode = " + mode);
         DenseVector circshiftNway = circshift(Nway, mode);
-//        System.out.println("circx = " + circshiftNway.get(0) + "circy = " + circshiftNway.get(1) + " circz = " + circshiftNway.get(2));
 
         int resx = (int) circshiftNway.get(0);
         int resy = (int) (circshiftNway.get(1) * circshiftNway.get(2));
 
         DenseMatrix res = new DenseMatrix(resx, resy);
-     //   System.out.println("resx = "+resx+" resy = "+resy);
 
         resx=0;
         resy=0;

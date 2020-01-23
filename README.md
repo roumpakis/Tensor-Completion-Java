@@ -29,7 +29,7 @@ tensors), vectors (first-order tensors) and matrices (second-order tensors).
 A commonly used way for recovering missing entries in high-order tensors is first to reduce them
 to low-rank matrices via appropriate unfolding and then apply matrix completion techniques.
 Unfolding is a transformation that reorders the elements of a tensor into a matrix and simplifies subsequent matrix-based processing . Such transformation is not unique, since different ways exist for stacking the horizontal, lateral and frontal slices of a tensor in either column-wise or row-wise arrays.
-The reverse process, where a 3D Tensor transform into a matrix is called folding.
+The reverse process, where a matrix  transform into a 3D Tensor is called folding.
 
 ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/Capture.PNG)
 
@@ -68,14 +68,15 @@ Specifically in the folder data\ there are measurements from 10 regions stored i
 * **DiIn.csv**	: Input water stream pressure measurement from i-th area
 * **DiOut.csv** : Output water stream pressure measurement from i-th area
 * **DiInMiss.csv**: Input water stream pressure measurement from i-th area with missing entries
-* **rdnxj.csv**: I
-* **X_j.csv**: I
-* **Y_j.csv**: I
+* **rdnxj.csv**: Rank increase j-th vector for testing
+* **X_j.csv**: Initialization of j-th Unfolding  of X matrix for testing
+* **Y_j.csv**: Initialization of j-th Unfolding  of Y matrix for testing
+
 ## Useful Methods <a name="useful"></a>
 
-* HAPT dataset
-* FORTH-TRACE dataset (collective scenario -- all devices of 10 random participants)
-* FORTH-TRACE dataset (single-device scenario -- for each separate device of 10 random participants) 
+* **Matlab.Fold:** Method that provides folding functionality, where a 2D matrix  transform into a 3D Tensor.
+* **Matlab.Unfold:** Method that provides folding functionality, where a 3D Tensor  transform into a 2D matrix.
+* **TCJTest.Test:** 
 
 ## Installation Instructions <a name="execution"></a>
 1. Download the project source files.
