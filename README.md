@@ -76,13 +76,14 @@ Specifically in the folder data\ there are measurements from 10 regions stored i
 
 * **Matlab.Fold:** Method that provides folding functionality, where a 2D matrix  transform into a 3D Tensor.
 * **Matlab.Unfold:** Method that provides folding functionality, where a 3D Tensor  transform into a 2D matrix.
-* **TCJTest.Test:** 
+* **TCJTest.Test:** Method that runs a TC test, with predefined data 
+* **Main.TMaacParTest:** Method that runs TC with user defined  data and random matrices
+
 
 ## Installation Instructions <a name="execution"></a>
 1. Download the project source files.
 2. Import the project to Netbeans or other IDE.
-3. Add the following libraries into the build path (located in the libs/ directory of the project):
-4. Specify the path of your dataset files in the Main.java file of the project.
+3. Call TCJTest.Test for predefine or Main.TMaacParTest for user defined data.
 
 
 ## License <a name="licence"></a>
