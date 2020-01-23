@@ -21,8 +21,11 @@ Tensor Completion provides a way of completing these measurements,especially for
 
 In real-world applications, it is often necessary to store the measurements in higher-order structures,
 apart from 2D matrices.Tensors are third-dimensional data structure which can be consindered as as a generalization of scalars (zero-order
-tensors), vectors (first-order tensors) and matrices (second-order tensors)
+tensors), vectors (first-order tensors) and matrices (second-order tensors).
+
 **Tensor Fold/Unfolding**
+A commonly used way for recovering missing entries in high-order tensors is first to reduce them
+to low-rank matrices via appropriate unfolding and then apply matrix completion techniques.
 
 **Tensor Completion (TC)**
 
@@ -64,4 +67,4 @@ Specifically in the folder data\ there are measurements from 10 regions stored i
 ## License <a name="licence"></a>
 Use of this source code in publications must be acknowledged by referencing the following publications:
 
-* Katerina Karagiannaki, Athanasia Panousopoulou, Panagiotis Tsakalides. A Benchmark Study on Feature Selection for Human Activity Recognition. ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp), ACM, 2016.
+* Roumpakis, Stylianos ; Tzagkarakis, George ; Tsakalides, Panagiotis Real-Time Prototyping of Matlab-Java Code Integration for Water Sensor Networks Applications,European Signal Processing Conference (EUSIPCO), 2019.
