@@ -29,6 +29,8 @@ A commonly used way for recovering missing entries in high-order tensors is firs
 to low-rank matrices via appropriate unfolding and then apply matrix completion techniques.
 Unfolding is a transformation that reorders the elements of a tensor into a matrix and simplifies subsequent matrix-based processing . Such transformation is not unique, since different ways exist for stacking the horizontal, lateral and frontal slices of a tensor in either column-wise or row-wise arrays.
 The reverse process, where a 3D Tensor transform into a matrix is called folding.
+
+
 **Tensor Completion (TC)**
 
 
