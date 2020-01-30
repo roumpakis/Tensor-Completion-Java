@@ -84,7 +84,7 @@ Specifically in the folder data\ there are measurements from 10 regions stored i
 ## Installation Instructions <a name="execution"></a>
 1. Download the project source files.
 2. Import the project to Netbeans or other IDE.
-3. Call TCJTest.Test for predefine or Main.TMaacParTest for user defined data.
+3. Call TCJTest.Test for predefined or Main.TMaacParTest for user defined data.
 
 
 ## License <a name="licence"></a>
