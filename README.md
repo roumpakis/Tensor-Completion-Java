@@ -88,6 +88,6 @@ Specifically in the folder data\ there are measurements from 10 regions stored i
 
 
 ## License <a name="licence"></a>
-Use of this source code in publications must be acknowledged by referencing the following publications:
+Use of this source code in publications must be acknowledged by referencing the following publication:
 
-* Roumpakis, Stylianos ; Tzagkarakis, George ; Tsakalides, Panagiotis Real-Time Prototyping of Matlab-Java Code Integration for Water Sensor Networks Applications,European Signal Processing Conference (EUSIPCO), 2019.
+* S. Roubakis, G. Tzagkarakis, and P. Tsakalides, "Real-Time Prototyping of Matlab-Java Code Integration for Water Sensor Networks Applications," in Proc. 27th European Signal Processing Conference (EUSIPCO '19), A Coruna, Spain, September 2-6, 2019.  
