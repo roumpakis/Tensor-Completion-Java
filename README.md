@@ -40,7 +40,7 @@ The reverse process, where a matrix  transform into a 3D Tensor is called foldin
 Parallel matrix factorization (PMF)  has been introduced as an efficient alternative for solving the TC problem.
 Focusing on the 3D case, we are interested in fully recovering a tensor $$ T R^{N X S X P} $$
 from M ≪ N  S  T measurements.
-Specifically, T is unfolded across all of its modes to a set of matrix factors $X_n, Y_n$, such that Tn  XnYn, where n = 1; 2; 3 indicates the corresponding
+Specifically, T is unfolded across all of its modes to a set of matrix factors $X_n, Y_n$, such that $$Tn = XnYn$$, where n = 1; 2; 3 indicates the corresponding
 mode. Introducing a common variable Z to relate these matrix factorizations, we solve the following
 problem to recover T
 
@@ -48,7 +48,7 @@ problem to recover T
 ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/formula.PNG)
 
 where X = (X1;X2;X3), Y = (Y1;Y2;Y3), and Zi, i = 1; 2; 3, corresponds to the unfolding of the
-three-way tensor. The parameters i are introduced in order to properly weight the contribution
+three-way tensor. The parameters Zi are introduced in order to properly weight the contribution
 of each unfolding.
 
 ## Modules Description <a name="modules"></a>
