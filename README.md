@@ -42,15 +42,15 @@ Parallel matrix factorization (PMF)  has been introduced as an efficient alterna
 Focusing on the 3D case, we are interested in fully recovering a tensor T <font face="Symbol">&#217;</font>
  R<sup>N * S * P</sup>
    from M  &lt; &lt; N * S * T measurements.
-Specifically, T is unfolded across all of its modes to a set of matrix factors X<sub>n</sub> , Y_n$,
- such that $$Tn = XnYn$$, where n = 1; 2; 3 indicates the corresponding
+Specifically, T is unfolded across all of its modes to a set of matrix factors X<sub>n</sub> , Y<sub>n</sub>
+ such that T<sub>n</sub> = X<sub>n</sub>*Y<sub>n</sub>, where n = 1; 2; 3 indicates the corresponding
 mode. Introducing a common variable Z to relate these matrix factorizations, we solve the following
 problem to recover T
 
 
 ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/formula.PNG)
 
-where X = (X1;X2;X3), Y = (Y1;Y2;Y3), and Zi, i = 1; 2; 3, corresponds to the unfolding of the
+where X = (X<sub>1</sub>;X<sub>2</sub>;X<sub>3</sub>), Y = (Y1;Y2;Y3), and Zi, i = 1; 2; 3, corresponds to the unfolding of the
 three-way tensor. The parameters Zi are introduced in order to properly weight the contribution
 of each unfolding.
 
