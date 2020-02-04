@@ -28,7 +28,8 @@ tensors), vectors (first-order tensors) and matrices (second-order tensors).
 
 A commonly used way for recovering missing entries in high-order tensors is first to reduce them
 to low-rank matrices via appropriate unfolding and then apply matrix completion techniques.
-Unfolding is a transformation that reorders the elements of a tensor into a matrix and simplifies subsequent matrix-based processing . Such transformation is not unique, since different ways exist for stacking the horizontal, lateral and frontal slices of a tensor in either column-wise or row-wise arrays.
+Unfolding is a transformation that reorders the elements of a tensor into a matrix and simplifies 
+subsequent matrix-based processing . Such transformation is not unique, since different ways exist for stacking the horizontal, lateral and frontal slices of a tensor in either column-wise or row-wise arrays.
 The reverse process, where a matrix  transform into a 3D Tensor is called folding.
 
 ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/Capture.PNG)
@@ -39,7 +40,7 @@ The reverse process, where a matrix  transform into a 3D Tensor is called foldin
 
 Parallel matrix factorization (PMF)  has been introduced as an efficient alternative for solving the TC problem.
 Focusing on the 3D case, we are interested in fully recovering a tensor $$ T R^{N X S X P} $$
-from M ≪ N  S  T measurements.
+from M  &lt; N * S * T measurements.
 Specifically, T is unfolded across all of its modes to a set of matrix factors $X_n, Y_n$, such that $$Tn = XnYn$$, where n = 1; 2; 3 indicates the corresponding
 mode. Introducing a common variable Z to relate these matrix factorizations, we solve the following
 problem to recover T
