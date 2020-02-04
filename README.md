@@ -43,7 +43,7 @@ Focusing on the 3D case, we are interested in fully recovering a tensor T <font 
  R<sup>N * S * P</sup>
    from M  &lt; &lt; N * S * T measurements.
 Specifically, T is unfolded across all of its modes to a set of matrix factors X<sub>n</sub> , Y<sub>n</sub>
- such that T<sub>n</sub> = X<sub>n</sub> * Y<sub>n</sub>, where n = 1; 2; 3 indicates the corresponding
+ such that T<sub>n</sub> <font face="Symbol">&#8776;</font> X<sub>n</sub> * Y<sub>n</sub>, where n = 1; 2; 3 indicates the corresponding
 mode. Introducing a common variable Z to relate these matrix factorizations, we solve the following
 problem to recover T
 
