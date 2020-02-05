@@ -46,9 +46,10 @@ Specifically, T is unfolded across all of its modes to a set of matrix factors X
  such that T<sub>n</sub> <font face="Symbol">&#8776;</font> X<sub>n</sub> * Y<sub>n</sub>, where n = 1, 2, 3 indicates the corresponding
 mode. A common variable Z is introduced to relate these matrix factorizations, and the tensor T is recovered by solving the following
 optimization problem,
+![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/min.PNG)
 
 
-![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/formula.PNG)
+
 
 where X = (X<sub>1</sub>;X<sub>2</sub>;X<sub>3</sub>), Y = (Y<sub>1</sub>;Y<sub>2</sub>;Y<sub>3</sub>), 
 and Z<sub>i</sub>, i = 1, 2, 3, correspond to the unfolding of the
