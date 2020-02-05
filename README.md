@@ -49,7 +49,7 @@ Focusing on the 3D case, we are interested in fully recovering a tensor T <font 
 Specifically, T is unfolded across all of its modes to a set of matrix factors X<sub>n</sub> , Y<sub>n</sub>
  such that T<sub>n</sub> <font face="Symbol">&#8776;</font> X<sub>n</sub> * Y<sub>n</sub>, where n = 1, 2, 3 indicates the corresponding
 mode. A common variable Z is introduced to relate these matrix factorizations, and the tensor T is recovered by solving the following
-optimization problem,
+optimization problem <br>
 ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/min.PNG)
 
 
