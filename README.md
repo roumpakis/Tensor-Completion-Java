@@ -41,8 +41,7 @@ The reverse process, where a matrix is transformed into a 3D tensor is called fo
 
 Parallel matrix factorization (PMF) has been introduced as an efficient alternative for solving the TC problem.
 Focusing on the 3D case, we are interested in fully recovering a tensor T <font face="Symbol">&#8712;</font>
- R<sup>N x S x P </sup>  
-   from M  <font face="Symbol">&#8810;</font> N * S * P measurements.
+ R<sup>N x S x P </sup>  from M  <font face="Symbol">&#8810;</font> N * S * P measurements.
    
    ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/formula.PNG)
    
