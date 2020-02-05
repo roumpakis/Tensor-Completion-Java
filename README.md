@@ -31,7 +31,7 @@ to low-rank matrices via appropriate unfolding and then apply matrix completion 
 Unfolding is a transformation that reorders the elements of a tensor into a matrix and simplifies 
 subsequent matrix-based processing. Such a transformation is not unique, since different ways exist for stacking the horizontal, lateral and frontal slices of a tensor in either column-wise or row-wise arrays.
 The reverse process, where a matrix is transformed into a 3D tensor is called folding.
-
+<font face="Symbol">&#229;</font><sup>n</sup>
 ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/Capture.PNG)
 
 
@@ -46,6 +46,8 @@ Specifically, T is unfolded across all of its modes to a set of matrix factors X
  such that T<sub>n</sub> <font face="Symbol">&#8776;</font> X<sub>n</sub> * Y<sub>n</sub>, where n = 1, 2, 3 indicates the corresponding
 mode. A common variable Z is introduced to relate these matrix factorizations, and the tensor T is recovered by solving the following
 optimization problem,
+
+min<sub>X,Y,Z</sub> 
 ![Tensor Unfolding](https://github.com/roumpakis/TCJ/blob/master/images/min.PNG)
 
 
